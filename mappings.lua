@@ -1,4 +1,7 @@
-return function(map) 
+local utils = require "astronvim.utils"
+local is_available = utils.is_available
+
+return function(maps) 
   -- Smart Splits
   if is_available "smart-splits.nvim" then
     maps.n["<c-left>"] = { function() require("smart-splits").move_cursor_left() end, desc = "move to left split" }
@@ -19,5 +22,7 @@ return function(map)
     maps.n["<c-h>"] = { "<cmd>vertical resize -2<cr>", desc = "resize split left" }
     maps.n["<c-l>"] = { "<cmd>vertical resize +2<cr>", desc = "resize split right" }
   end
+
+  return maps
 end
 
