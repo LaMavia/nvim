@@ -1,3 +1,5 @@
+require "./vim"
+
 return {
   -- Configure AstroNvim updates
   updater = {
