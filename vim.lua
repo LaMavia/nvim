@@ -1,1 +1,1 @@
-vim.opt.shell = "nu"
+vim.opt.shell = "zsh"
