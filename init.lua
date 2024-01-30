@@ -46,6 +46,7 @@ return {
   polish = function()
     require('nu').setup{}
     require('notebook').setup()
+    require('prettier').setup{}
     require(_dir .. 'lsp.metals').setup()
 
     -- require("coqtail").setup {}
